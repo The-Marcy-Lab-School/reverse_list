@@ -5,8 +5,13 @@ E: See tests
 
 D: Linked List,Node
 
-A:
-
+A:  Define 3 variables, one holding the current node. one pointing to the previous node , one pointing to the next node.
+    while there is a current node
+        set next  = to current.next
+        set current.next  = to the previous node
+        set previous node = to the current node
+        set current = next
+    return previous
 
 C:
 '''
