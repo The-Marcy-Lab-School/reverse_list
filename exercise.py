@@ -9,9 +9,10 @@ def reverse(node: Node) -> Node:
     ahead = curr.next 
     
     while curr:
+        ahead = curr.next
         curr.next = prev
         prev = curr 
         curr = ahead
-        ahead = curr.next
+    return prev
         
     
